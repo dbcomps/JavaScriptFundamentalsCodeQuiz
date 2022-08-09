@@ -14,9 +14,8 @@ function countdown() {
     } else {
       timerEl.textContent = '';
       clearInterval(timeInterval);
-      displayMessage();
     }
   }, 1000);
 }
 
-startQuizButton.addEventListener("click", countdown());
+startQuizButton.addEventListener("click", countdown);
