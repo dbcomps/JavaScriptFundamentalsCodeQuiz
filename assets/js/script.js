@@ -1,7 +1,8 @@
 var timerEl = document.getElementById('countdown');
+var timeLeft = 100;
+var startQuizButton = document.getElementById("startQuiz-btn")
 
 function countdown() {
-	var timeLeft = 100;
 
  var timeInterval = setInterval(function () {
     if (timeLeft > 1) {
@@ -18,5 +19,4 @@ function countdown() {
   }, 1000);
 }
 
-
-countdown();
+startQuizButton.addEventListener("click", countdown());
