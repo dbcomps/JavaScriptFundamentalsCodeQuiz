@@ -16,7 +16,6 @@ var questions = [{
 		answers1: "A superset of Java",
 		answers2: "A language for making the style and presentation of a webpage",
 		answers3:	"A programming language to implement the logic of a webpage",
-		answers4:	"A scripting language based on Java for manipulating the DOM",
 		correctAnswer: "answer3"},
 {
 		question: "The id attribute of an element can be used on how many different elements?",
@@ -31,20 +30,23 @@ var questions = [{
 		answers2:	"The object to which the method is being called",
 		answers3:	"The subject from which the method was called",
 		answers4:	"The place in the function where you should add an object",
-		correctAnswer: "answer1"}
+		correctAnswer: "answer1"},
+{
+		question: "In JavaScrip a callback function is?",
+		answers1: "Specifically built to be used as an argument to another function",
+		answers2:	"Created like a regular function",
+		answers3:	"Has a parent function",
+		answers4:	"All of the above",
+		correctAnswer: "answer4"}
 ];
 
 function nextQuestion() {
-
-	var firstQuestion = questions[0];
 	
 	questionEl.textContent = questions.at(0).question;
-
 	answers1El.textContent = questions.at(0).answers1;
 	answers2El.textContent = questions.at(0).answers2;
 	answers3El.textContent = questions.at(0).answers3;
 	answers4El.textContent = questions.at(0).answers4;
-
 }
 
 function countdown() {
