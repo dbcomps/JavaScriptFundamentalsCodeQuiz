@@ -4,6 +4,10 @@ var startQuizButton = document.getElementById("startQuiz-btn");
 
 // var questionEl = document.querySelector("#possible-question");
 var questionEl = document.getElementById('question');
+var answers1El = document.getElementById('answer1');
+var answers2El = document.getElementById('answer2');
+var answers3El = document.getElementById('answer3');
+var answers4El = document.getElementById('answer4');
 
 var questionCounter = 0;
 
@@ -12,6 +16,7 @@ var questions = [{
 		answers1: "A superset of Java",
 		answers2: "A language for making the style and presentation of a webpage",
 		answers3:	"A programming language to implement the logic of a webpage",
+		answers4:	"A scripting language based on Java for manipulating the DOM",
 		correctAnswer: "answer3"},
 {
 		question: "The id attribute of an element can be used on how many different elements?",
@@ -32,19 +37,15 @@ var questions = [{
 function nextQuestion() {
 
 	var firstQuestion = questions[0];
-	console.log(firstQuestion);
-	console.log(questions[0].question);
-	console.log(timerEl);
-	console.log(questionEl);
-	console.log(questions.at(0).question);
-	console.log(questions.at(0).question);
+	
 	questionEl.textContent = questions.at(0).question;
-	//questionEl.textContent = questions.at(questionCounter).question
-// 	questionEl.innerHTML = questions.at(0).question;
-// 	questionEl.innerHTML = firstQuestion.question;
+
+	answers1El.textContent = questions.at(0).answers1;
+	answers2El.textContent = questions.at(0).answers2;
+	answers3El.textContent = questions.at(0).answers3;
+	answers4El.textContent = questions.at(0).answers4;
+
 }
-
-
 
 function countdown() {
 
