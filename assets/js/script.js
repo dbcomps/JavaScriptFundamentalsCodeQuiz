@@ -36,7 +36,9 @@ function nextQuestion() {
 	console.log(questions[0].question);
 	console.log(timerEl);
 	console.log(questionEl);
-	
+	console.log(questions.at(0).question);
+	console.log(questions.at(0).question);
+	questionEl.textContent = questions.at(0).question;
 	//questionEl.textContent = questions.at(questionCounter).question
 // 	questionEl.innerHTML = questions.at(0).question;
 // 	questionEl.innerHTML = firstQuestion.question;
@@ -46,7 +48,6 @@ function nextQuestion() {
 
 function countdown() {
 
-console.log(questions.at(0).question)
 nextQuestion();
 
  var timeInterval = setInterval(function () {
